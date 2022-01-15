@@ -61,3 +61,17 @@ body {
     background: transparent;
     cursor: pointer;
 }
+
+.embed-responsive-16by9{
+    text-align: center;
+}
+
+.pandas p{
+    color: white;
+
+}
+
+.pandas {
+    margin: 40px 0px;
+
+}

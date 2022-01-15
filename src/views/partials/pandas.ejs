@@ -1,0 +1,45 @@
+<h4 class="mail-heading">
+    Introdução ao Pandas
+</h4>
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/147jF0BiDDQUmhmP5Z--F3hY_3uc81V9V/preview" width="960" height="540" allow="autoplay" allowfullscreen></iframe>
+</div>
+
+<div class="pandas">
+<p class="h2">Guia de Referências</p>
+<br>
+<p class="h4">Importar o Pandas e visualizar a tabela original</p>
+<p class="font-italic">
+# !/ bin/python 
+    import pandas as pd
+<br>cancer = pd.read_csv('./data.csv', index_col =0)
+<br>print(cancer)
+</p>
+
+<p class="h4">Comandos do Pandas</p>
+<p class="font-italic">
+    print(cancer.head(20))
+<br>print(cancer.shape)
+<br>[a, b] = cancer.shape
+<br>print(f'{a} linhas e {b} colunas')
+<br>print(cancer.describe())
+<br>print(cancer['radius_mean'])
+<br>print(cancer[['radius_mean', 'area_mean']])
+</p>
+
+<p class="h4">Exemplo de IA</p>
+<p class="font-italic">
+    diag = {'M':0 , 'B':1}
+<br>cancer.diagnosis = [diag[item] for item in cancer.diagnosis]
+<br>X = cancer [cancer.columns[1:31]].to_numpy()
+<br>y = cancer[['diagnosis']].to_numpy()
+<br>from sklearn.model_selection import cross_val_score
+<br>from sklearn.tree import DecisionTreeClassifier
+<br>tree = DecisionTreeClassifier(max_depth=5, random_state=0)
+<br>scores = cross_val_score(tree, X ,y ,cv =10 ,scoring = 'accuracy')
+<br>print(scores)
+</p>
+</div>
+
+

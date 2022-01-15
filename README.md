@@ -34,17 +34,22 @@ npm run dev
 para executá-lo.
 O projeto estará acessível em: `http://localhost/4000`
 
-
-# Demo
+### Demo
 
 ![demo.png](src/public/demo.png)
 
-Deve-se colocar
+Deve-se subistituir a linha `7`de `src/views/pages/home.ejs` por:
 ```ejs
 <%- include('../partials/emails.ejs') %>
 ```
-na linha `7`de `src/views/pages/home.ejs`para ficar assim.
+para ficar como na imagem a cima.
 
+Ou por
+```ejs
+<%- include('../partials/emails.ejs') %>
+```
+Para ficar como na imagem abaixo
+![demo.png](src/public/demo2.png)
 
 
 
