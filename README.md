@@ -46,7 +46,7 @@ para ficar como na imagem a cima.
 
 Ou por
 ```ejs
-<%- include('../partials/emails.ejs') %>
+<%- include('../partials/pandas.ejs') %>
 ```
 Para ficar como na imagem abaixo
 ![demo.png](src/public/demo2.png)
