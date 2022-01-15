@@ -35,11 +35,15 @@ para executá-lo.
 O projeto estará acessível em: `http://localhost/4000`
 
 
+# Demo
 
+![demo.png](src/public/demo.png)
 
-
-
-
+Deve-se colocar
+```ejs
+<%- include('../partials/emails.ejs') %>
+```
+na linha `7`de `src/views/pages/home.ejs`para ficar assim.
 
 
 
